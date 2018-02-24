@@ -7,7 +7,7 @@ $date = new DateTime('+1 week');
 setcookie('session', 'abc', $date->getTimestamp());
 
 if (!isset($_GET['username'])) {
-	die();
+	die('not permitted');
 }
 
 
